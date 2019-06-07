@@ -6,7 +6,8 @@ import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'product-list',
-  templateUrl: './product-list.component.html'
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit, AfterViewInit {
   productItems: any;
