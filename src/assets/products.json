@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "HP Desktop",
+    "code": "HP1",
+    "releaseDate": "June 2019",
+    "price": "1000",
+    "rating": 5,
+    "itemImgUrl": ""
+  },
+  {
+    "id": "2",
+    "name": "HP Laptop",
+    "code": "HP2",
+    "releaseDate": "June 2019",
+    "price": "2000",
+    "rating": 5,
+    "itemImgUrl": ""
+  },
+  {
+    "id": "3",
+    "name": "Macbook",
+    "code": "MBP",
+    "releaseDate": "June 2019",
+    "price": "9999",
+    "rating": 5,
+    "itemImgUrl": ""
+  }
+]

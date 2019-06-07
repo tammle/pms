@@ -1,0 +1,34 @@
+<div class="card" *ngIf="productDetail">
+  <div class="card-header">
+    Product detail: {{productDetail.name}}
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-2">Name:</div>
+      <div class="col-10">{{productDetail.name}}</div>
+    </div>
+    <div class="row">
+      <div class="col-2">Code:</div>
+      <div class="col-10">{{productDetail.code}}</div>
+    </div>
+    <div class="row">
+      <div class="col-2">Description:</div>
+      <div class="col-10">{{productDetail.description}}</div>
+    </div>
+    <div class="row">
+      <div class="col-2">Availability:</div>
+      <div class="col-10">{{productDetail.releaseDate}}</div>
+    </div>
+    <div class="row">
+      <div class="col-2">Price:</div>
+      <div class="col-10">$ {{productDetail.price}}</div>
+    </div>
+    <div class="row">
+      <div class="col-2">Rating:</div>
+      <div class="col-10"><product-rating></product-rating></div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <button type="button" class="btn btn-sm btn-outline-secondary" routerLink="..">Back</button>
+  </div>
+</div>
