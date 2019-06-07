@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'product-rating',
-  templateUrl: './rating.component.html',
-  styleUrls: ['./rating.component.css']
+  templateUrl: './rating.component.html'
 })
 export class RatingComponent implements OnInit {
 

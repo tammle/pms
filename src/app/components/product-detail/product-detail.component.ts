@@ -6,8 +6,7 @@ import { ProductDataService } from '../../services/product-data.service';
 
 @Component({
   selector: 'product-detail',
-  templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+  templateUrl: './product-detail.component.html'
 })
 export class ProductDetailComponent implements OnInit {
   productDetail: any; // TODO: define correct type, should not use any
