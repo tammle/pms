@@ -5,8 +5,8 @@
     "code": "HP1",
     "releaseDate": "June 2019",
     "price": "1000",
-    "rating": 5,
-    "itemImgUrl": ""
+    "rating": 3,
+    "itemImgUrl": "assets/pms2.jpeg"
   },
   {
     "id": "2",
@@ -14,8 +14,8 @@
     "code": "HP2",
     "releaseDate": "June 2019",
     "price": "2000",
-    "rating": 5,
-    "itemImgUrl": ""
+    "rating": 2,
+    "itemImgUrl": "assets/pms3.jpeg"
   },
   {
     "id": "3",
@@ -24,6 +24,6 @@
     "releaseDate": "June 2019",
     "price": "9999",
     "rating": 5,
-    "itemImgUrl": ""
+    "itemImgUrl": "assets/pms1.jpeg"
   }
 ]

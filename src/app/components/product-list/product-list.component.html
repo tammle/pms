@@ -13,11 +13,13 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row table-responsive">
       <table class="table">
         <thead>
         <tr>
-          <th>Product Image</th>
+          <th>
+            <button class="btn btn-primary">Show Image</button>
+          </th>
           <th scope="col">Product</th>
           <th scope="col">Code</th>
           <th scope="col">Available</th>
@@ -28,13 +30,17 @@
 
         <tbody *ngFor="let item of productItems">
         <tr>
-          <th scope="row">Image here!</th>
+          <th scope="row">
+            <a [routerLink]="['./', item.id]">
+              <img class="img-thumbnail" [src]="item.itemImgUrl" [alt]="item.name"/>
+            </a>
+          </th>
           <td><a [routerLink]="['./', item.id]">{{item.name}}</a></td>
           <td>{{item.code}}</td>
           <td>{{item.releaseDate}}</td>
           <td>{{item.price}}</td>
           <td>
-            <product-rating></product-rating>
+            <product-rating [rating]="item.rating"></product-rating>
           </td>
         </tr>
         </tbody>
