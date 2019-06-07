@@ -2,7 +2,8 @@
 
 ## TODO
 - Implement rating component
-- Use correct type for variables, should not use <any> anywhere!
+- Use correct type for variables, should not use `<any>` anywhere!
+- Update styles!
 
 ## Development server
 
