@@ -12,6 +12,7 @@ import { map } from 'rxjs/operators';
 export class ProductListComponent implements OnInit, AfterViewInit {
   productItems: any;
   productItems$: Observable<any>;
+  shouldShowImage: boolean = true;
 
   constructor(private productDataService: ProductDataService) {}
 
@@ -19,7 +20,6 @@ export class ProductListComponent implements OnInit, AfterViewInit {
     this.productItems$ = this.productDataService.getProductList();
     this.productItems$.subscribe((productItems) => this.productItems = productItems);
   }
-
   ngAfterViewInit() {
     const filterInput = document.getElementById('product-filter');
     const onInputChanged$ = combineLatest(
@@ -32,5 +32,9 @@ export class ProductListComponent implements OnInit, AfterViewInit {
     onInputChanged$.subscribe(([text, products]) => {
       this.productItems = products.filter(item => item['name'].toLowerCase().includes(text))
     })
+  }
+
+  toggleImage() {
+    this.shouldShowImage = !this.shouldShowImage;
   }
 }

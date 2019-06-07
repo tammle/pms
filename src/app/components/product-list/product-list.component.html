@@ -18,7 +18,12 @@
         <thead>
         <tr>
           <th>
-            <button class="btn btn-primary">Show Image</button>
+            <button *ngIf="shouldShowImage; else hideImgBtn" class="btn btn-primary" (click)="toggleImage()">
+              Show Image
+            </button>
+            <ng-template #hideImgBtn>
+              <button class="btn btn-primary" (click)="toggleImage()">Hide Image</button>
+            </ng-template>
           </th>
           <th scope="col">Product</th>
           <th scope="col">Code</th>
@@ -31,7 +36,7 @@
         <tbody *ngFor="let item of productItems">
         <tr>
           <th scope="row">
-            <a [routerLink]="['./', item.id]">
+            <a *ngIf="shouldShowImage" [routerLink]="['./', item.id]">
               <img class="img-thumbnail" [src]="item.itemImgUrl" [alt]="item.name"/>
             </a>
           </th>

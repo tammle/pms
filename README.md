@@ -2,8 +2,6 @@
 
 ## TODO
 - Implement rating component
-- Implement toggle product image
-- Update styles!
 
 ## Development server
 
